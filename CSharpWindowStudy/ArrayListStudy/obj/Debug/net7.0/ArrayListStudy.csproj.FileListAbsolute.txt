@@ -1,0 +1,14 @@
+D:\Rider\CSharpWindowStudy\ArrayListStudy\bin\Debug\net7.0\ArrayListStudy.exe
+D:\Rider\CSharpWindowStudy\ArrayListStudy\bin\Debug\net7.0\ArrayListStudy.deps.json
+D:\Rider\CSharpWindowStudy\ArrayListStudy\bin\Debug\net7.0\ArrayListStudy.runtimeconfig.json
+D:\Rider\CSharpWindowStudy\ArrayListStudy\bin\Debug\net7.0\ArrayListStudy.dll
+D:\Rider\CSharpWindowStudy\ArrayListStudy\bin\Debug\net7.0\ArrayListStudy.pdb
+D:\Rider\CSharpWindowStudy\ArrayListStudy\obj\Debug\net7.0\ArrayListStudy.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rider\CSharpWindowStudy\ArrayListStudy\obj\Debug\net7.0\ArrayListStudy.AssemblyInfoInputs.cache
+D:\Rider\CSharpWindowStudy\ArrayListStudy\obj\Debug\net7.0\ArrayListStudy.AssemblyInfo.cs
+D:\Rider\CSharpWindowStudy\ArrayListStudy\obj\Debug\net7.0\ArrayListStudy.csproj.CoreCompileInputs.cache
+D:\Rider\CSharpWindowStudy\ArrayListStudy\obj\Debug\net7.0\ArrayListStudy.dll
+D:\Rider\CSharpWindowStudy\ArrayListStudy\obj\Debug\net7.0\refint\ArrayListStudy.dll
+D:\Rider\CSharpWindowStudy\ArrayListStudy\obj\Debug\net7.0\ArrayListStudy.pdb
+D:\Rider\CSharpWindowStudy\ArrayListStudy\obj\Debug\net7.0\ArrayListStudy.genruntimeconfig.cache
+D:\Rider\CSharpWindowStudy\ArrayListStudy\obj\Debug\net7.0\ref\ArrayListStudy.dll

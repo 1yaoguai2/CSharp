@@ -1,0 +1,14 @@
+D:\Rider\CSharpStudy\CSharpStudy\bin\Debug\net7.0\CSharpStudy.exe
+D:\Rider\CSharpStudy\CSharpStudy\bin\Debug\net7.0\CSharpStudy.deps.json
+D:\Rider\CSharpStudy\CSharpStudy\bin\Debug\net7.0\CSharpStudy.runtimeconfig.json
+D:\Rider\CSharpStudy\CSharpStudy\bin\Debug\net7.0\CSharpStudy.dll
+D:\Rider\CSharpStudy\CSharpStudy\bin\Debug\net7.0\CSharpStudy.pdb
+D:\Rider\CSharpStudy\CSharpStudy\obj\Debug\net7.0\CSharpStudy.GeneratedMSBuildEditorConfig.editorconfig
+D:\Rider\CSharpStudy\CSharpStudy\obj\Debug\net7.0\CSharpStudy.AssemblyInfoInputs.cache
+D:\Rider\CSharpStudy\CSharpStudy\obj\Debug\net7.0\CSharpStudy.AssemblyInfo.cs
+D:\Rider\CSharpStudy\CSharpStudy\obj\Debug\net7.0\CSharpStudy.csproj.CoreCompileInputs.cache
+D:\Rider\CSharpStudy\CSharpStudy\obj\Debug\net7.0\CSharpStudy.dll
+D:\Rider\CSharpStudy\CSharpStudy\obj\Debug\net7.0\refint\CSharpStudy.dll
+D:\Rider\CSharpStudy\CSharpStudy\obj\Debug\net7.0\CSharpStudy.pdb
+D:\Rider\CSharpStudy\CSharpStudy\obj\Debug\net7.0\CSharpStudy.genruntimeconfig.cache
+D:\Rider\CSharpStudy\CSharpStudy\obj\Debug\net7.0\ref\CSharpStudy.dll

@@ -1,0 +1,6 @@
+D:\Rider\CSharpWindowStudy\ReflecationStudy\bin\Debug\ReflecationStudy.exe
+D:\Rider\CSharpWindowStudy\ReflecationStudy\bin\Debug\ReflecationStudy.pdb
+D:\Rider\CSharpWindowStudy\ReflecationStudy\obj\Debug\ReflecationStudy.csproj.AssemblyReference.cache
+D:\Rider\CSharpWindowStudy\ReflecationStudy\obj\Debug\ReflecationStudy.csproj.CoreCompileInputs.cache
+D:\Rider\CSharpWindowStudy\ReflecationStudy\obj\Debug\ReflecationStudy.exe
+D:\Rider\CSharpWindowStudy\ReflecationStudy\obj\Debug\ReflecationStudy.pdb

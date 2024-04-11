@@ -1,0 +1,6 @@
+D:\Rider\CSharpWindowStudy\LambdaStudy\bin\Debug\LambdaStudy.exe
+D:\Rider\CSharpWindowStudy\LambdaStudy\bin\Debug\LambdaStudy.pdb
+D:\Rider\CSharpWindowStudy\LambdaStudy\obj\Debug\LambdaStudy.csproj.AssemblyReference.cache
+D:\Rider\CSharpWindowStudy\LambdaStudy\obj\Debug\LambdaStudy.csproj.CoreCompileInputs.cache
+D:\Rider\CSharpWindowStudy\LambdaStudy\obj\Debug\LambdaStudy.exe
+D:\Rider\CSharpWindowStudy\LambdaStudy\obj\Debug\LambdaStudy.pdb

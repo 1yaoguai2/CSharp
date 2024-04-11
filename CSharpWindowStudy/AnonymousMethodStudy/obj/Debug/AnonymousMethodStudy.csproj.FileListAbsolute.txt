@@ -1,0 +1,6 @@
+D:\Rider\CSharpWindowStudy\AnonymousMethodStudy\bin\Debug\AnonymousMethodStudy.exe
+D:\Rider\CSharpWindowStudy\AnonymousMethodStudy\bin\Debug\AnonymousMethodStudy.pdb
+D:\Rider\CSharpWindowStudy\AnonymousMethodStudy\obj\Debug\AnonymousMethodStudy.csproj.AssemblyReference.cache
+D:\Rider\CSharpWindowStudy\AnonymousMethodStudy\obj\Debug\AnonymousMethodStudy.csproj.CoreCompileInputs.cache
+D:\Rider\CSharpWindowStudy\AnonymousMethodStudy\obj\Debug\AnonymousMethodStudy.exe
+D:\Rider\CSharpWindowStudy\AnonymousMethodStudy\obj\Debug\AnonymousMethodStudy.pdb
