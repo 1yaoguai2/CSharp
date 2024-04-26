@@ -7,7 +7,7 @@
         <ProjectGuid>{042EA719-DAE2-42A2-A5F1-DA826F8D4D22}</ProjectGuid>
         <OutputType>WinExe</OutputType>
         <RootNamespace>StingStudy</RootNamespace>
-        <AssemblyName>StingStudy</AssemblyName>
+        <AssemblyName>StringStudy</AssemblyName>
         <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionStudy", "ReflectionStudy\ReflectionStudy.csproj", "{8121733B-C10A-46E8-BB21-233A45F0FADD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StingStudy", "StingStudy\StingStudy.csproj", "{042EA719-DAE2-42A2-A5F1-DA826F8D4D22}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringStudy", "StringStudy\StringStudy.csproj", "{042EA719-DAE2-42A2-A5F1-DA826F8D4D22}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayListStudy", "ArrayListStudy\ArrayListStudy.csproj", "{884A2A01-C085-4BCF-A4C3-9AA31887AB9A}"
 EndProject
@@ -15,6 +15,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultithreadingStudy", "MultithreadingStudy\MultithreadingStudy.csproj", "{32D4F74B-3F73-4AC1-9264-D7BAC2184FE8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateStudy", "DelegateStudy\DelegateStudy.csproj", "{2016DDFC-F577-4AE3-9BE4-843061888ABF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructStudy", "StructStudy\StructStudy.csproj", "{03CE1CF1-7E5E-456D-B48C-6ACCAD9D8382}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,5 +56,9 @@ Global
 		{2016DDFC-F577-4AE3-9BE4-843061888ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2016DDFC-F577-4AE3-9BE4-843061888ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2016DDFC-F577-4AE3-9BE4-843061888ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03CE1CF1-7E5E-456D-B48C-6ACCAD9D8382}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03CE1CF1-7E5E-456D-B48C-6ACCAD9D8382}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03CE1CF1-7E5E-456D-B48C-6ACCAD9D8382}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03CE1CF1-7E5E-456D-B48C-6ACCAD9D8382}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
