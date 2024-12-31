@@ -8,3 +8,13 @@ D:\Rider\CSharpWindowStudy\MultithreadingStudy\obj\Debug\MultithreadingStudy.csp
 D:\Rider\CSharpWindowStudy\MultithreadingStudy\obj\Debug\MultithreadingStudy.exe
 D:\Rider\CSharpWindowStudy\MultithreadingStudy\obj\Debug\MultithreadingStudy.pdb
 D:\Rider\CSharpWindowStudy\MultithreadingStudy\obj\Debug\MultithreadingStudy.Form1.resources
+D:\XKZ\CSharp\CSharpWindowStudy\MultithreadingStudy\bin\Debug\MultithreadingStudy.exe.config
+D:\XKZ\CSharp\CSharpWindowStudy\MultithreadingStudy\bin\Debug\MultithreadingStudy.exe
+D:\XKZ\CSharp\CSharpWindowStudy\MultithreadingStudy\bin\Debug\MultithreadingStudy.pdb
+D:\XKZ\CSharp\CSharpWindowStudy\MultithreadingStudy\obj\Debug\MultithreadingStudy.csproj.AssemblyReference.cache
+D:\XKZ\CSharp\CSharpWindowStudy\MultithreadingStudy\obj\Debug\MultithreadingStudy.Form1.resources
+D:\XKZ\CSharp\CSharpWindowStudy\MultithreadingStudy\obj\Debug\MultithreadingStudy.Properties.Resources.resources
+D:\XKZ\CSharp\CSharpWindowStudy\MultithreadingStudy\obj\Debug\MultithreadingStudy.csproj.GenerateResource.cache
+D:\XKZ\CSharp\CSharpWindowStudy\MultithreadingStudy\obj\Debug\MultithreadingStudy.csproj.CoreCompileInputs.cache
+D:\XKZ\CSharp\CSharpWindowStudy\MultithreadingStudy\obj\Debug\MultithreadingStudy.exe
+D:\XKZ\CSharp\CSharpWindowStudy\MultithreadingStudy\obj\Debug\MultithreadingStudy.pdb

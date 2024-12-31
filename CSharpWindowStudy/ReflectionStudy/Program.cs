@@ -45,5 +45,6 @@ namespace ReflecationStudy
         }
         /* 私有属性不属于实列对象，属于类 */
         /* 调试场景，测试代码中推荐使用反射获取私有变量 */
+        /* 应用，在unity中通过反射查找UnityEditor.WindowLayout，实现保存和加载自定义的布局wlt文件 */
     }
 }

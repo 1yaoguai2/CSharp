@@ -4,3 +4,9 @@ D:\Rider\CSharpWindowStudy\ReflectionStudy\obj\Debug\ReflectionStudy.csproj.Asse
 D:\Rider\CSharpWindowStudy\ReflectionStudy\obj\Debug\ReflectionStudy.csproj.CoreCompileInputs.cache
 D:\Rider\CSharpWindowStudy\ReflectionStudy\obj\Debug\ReflectionStudy.exe
 D:\Rider\CSharpWindowStudy\ReflectionStudy\obj\Debug\ReflectionStudy.pdb
+D:\XKZ\CSharp\CSharpWindowStudy\ReflectionStudy\bin\Debug\ReflectionStudy.exe
+D:\XKZ\CSharp\CSharpWindowStudy\ReflectionStudy\bin\Debug\ReflectionStudy.pdb
+D:\XKZ\CSharp\CSharpWindowStudy\ReflectionStudy\obj\Debug\ReflectionStudy.csproj.AssemblyReference.cache
+D:\XKZ\CSharp\CSharpWindowStudy\ReflectionStudy\obj\Debug\ReflectionStudy.csproj.CoreCompileInputs.cache
+D:\XKZ\CSharp\CSharpWindowStudy\ReflectionStudy\obj\Debug\ReflectionStudy.exe
+D:\XKZ\CSharp\CSharpWindowStudy\ReflectionStudy\obj\Debug\ReflectionStudy.pdb

@@ -4,3 +4,9 @@ D:\Rider\CSharpWindowStudy\AnonymousMethodStudy\obj\Debug\AnonymousMethodStudy.c
 D:\Rider\CSharpWindowStudy\AnonymousMethodStudy\obj\Debug\AnonymousMethodStudy.csproj.CoreCompileInputs.cache
 D:\Rider\CSharpWindowStudy\AnonymousMethodStudy\obj\Debug\AnonymousMethodStudy.exe
 D:\Rider\CSharpWindowStudy\AnonymousMethodStudy\obj\Debug\AnonymousMethodStudy.pdb
+D:\XKZ\CSharp\CSharpWindowStudy\AnonymousMethodStudy\bin\Debug\AnonymousMethodStudy.exe
+D:\XKZ\CSharp\CSharpWindowStudy\AnonymousMethodStudy\bin\Debug\AnonymousMethodStudy.pdb
+D:\XKZ\CSharp\CSharpWindowStudy\AnonymousMethodStudy\obj\Debug\AnonymousMethodStudy.csproj.AssemblyReference.cache
+D:\XKZ\CSharp\CSharpWindowStudy\AnonymousMethodStudy\obj\Debug\AnonymousMethodStudy.csproj.CoreCompileInputs.cache
+D:\XKZ\CSharp\CSharpWindowStudy\AnonymousMethodStudy\obj\Debug\AnonymousMethodStudy.exe
+D:\XKZ\CSharp\CSharpWindowStudy\AnonymousMethodStudy\obj\Debug\AnonymousMethodStudy.pdb

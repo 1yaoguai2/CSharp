@@ -4,3 +4,9 @@ D:\Rider\CSharpWindowStudy\LambdaStudy\obj\Debug\LambdaStudy.csproj.AssemblyRefe
 D:\Rider\CSharpWindowStudy\LambdaStudy\obj\Debug\LambdaStudy.csproj.CoreCompileInputs.cache
 D:\Rider\CSharpWindowStudy\LambdaStudy\obj\Debug\LambdaStudy.exe
 D:\Rider\CSharpWindowStudy\LambdaStudy\obj\Debug\LambdaStudy.pdb
+D:\XKZ\CSharp\CSharpWindowStudy\LambdaStudy\bin\Debug\LambdaStudy.exe
+D:\XKZ\CSharp\CSharpWindowStudy\LambdaStudy\bin\Debug\LambdaStudy.pdb
+D:\XKZ\CSharp\CSharpWindowStudy\LambdaStudy\obj\Debug\LambdaStudy.csproj.AssemblyReference.cache
+D:\XKZ\CSharp\CSharpWindowStudy\LambdaStudy\obj\Debug\LambdaStudy.csproj.CoreCompileInputs.cache
+D:\XKZ\CSharp\CSharpWindowStudy\LambdaStudy\obj\Debug\LambdaStudy.exe
+D:\XKZ\CSharp\CSharpWindowStudy\LambdaStudy\obj\Debug\LambdaStudy.pdb

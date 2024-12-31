@@ -4,3 +4,9 @@ D:\Rider\CSharpWindowStudy\DelegateStudy\obj\Debug\DelegateStudy.csproj.Assembly
 D:\Rider\CSharpWindowStudy\DelegateStudy\obj\Debug\DelegateStudy.csproj.CoreCompileInputs.cache
 D:\Rider\CSharpWindowStudy\DelegateStudy\obj\Debug\DelegateStudy.exe
 D:\Rider\CSharpWindowStudy\DelegateStudy\obj\Debug\DelegateStudy.pdb
+D:\XKZ\CSharp\CSharpWindowStudy\DelegateStudy\bin\Debug\DelegateStudy.exe
+D:\XKZ\CSharp\CSharpWindowStudy\DelegateStudy\bin\Debug\DelegateStudy.pdb
+D:\XKZ\CSharp\CSharpWindowStudy\DelegateStudy\obj\Debug\DelegateStudy.csproj.AssemblyReference.cache
+D:\XKZ\CSharp\CSharpWindowStudy\DelegateStudy\obj\Debug\DelegateStudy.csproj.CoreCompileInputs.cache
+D:\XKZ\CSharp\CSharpWindowStudy\DelegateStudy\obj\Debug\DelegateStudy.exe
+D:\XKZ\CSharp\CSharpWindowStudy\DelegateStudy\obj\Debug\DelegateStudy.pdb

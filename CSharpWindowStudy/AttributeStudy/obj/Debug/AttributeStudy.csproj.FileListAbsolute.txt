@@ -8,3 +8,13 @@ D:\Rider\CSharpWindowStudy\AttributeStudy\obj\Debug\AttributeStudy.csproj.CoreCo
 D:\Rider\CSharpWindowStudy\AttributeStudy\obj\Debug\AttributeStudy.exe
 D:\Rider\CSharpWindowStudy\AttributeStudy\obj\Debug\AttributeStudy.pdb
 D:\Rider\CSharpWindowStudy\AttributeStudy\obj\Debug\AttributeStudy.Form1.resources
+D:\XKZ\CSharp\CSharpWindowStudy\AttributeStudy\bin\Debug\AttributeStudy.exe.config
+D:\XKZ\CSharp\CSharpWindowStudy\AttributeStudy\bin\Debug\AttributeStudy.exe
+D:\XKZ\CSharp\CSharpWindowStudy\AttributeStudy\bin\Debug\AttributeStudy.pdb
+D:\XKZ\CSharp\CSharpWindowStudy\AttributeStudy\obj\Debug\AttributeStudy.csproj.AssemblyReference.cache
+D:\XKZ\CSharp\CSharpWindowStudy\AttributeStudy\obj\Debug\AttributeStudy.Form1.resources
+D:\XKZ\CSharp\CSharpWindowStudy\AttributeStudy\obj\Debug\AttributeStudy.Properties.Resources.resources
+D:\XKZ\CSharp\CSharpWindowStudy\AttributeStudy\obj\Debug\AttributeStudy.csproj.GenerateResource.cache
+D:\XKZ\CSharp\CSharpWindowStudy\AttributeStudy\obj\Debug\AttributeStudy.csproj.CoreCompileInputs.cache
+D:\XKZ\CSharp\CSharpWindowStudy\AttributeStudy\obj\Debug\AttributeStudy.exe
+D:\XKZ\CSharp\CSharpWindowStudy\AttributeStudy\obj\Debug\AttributeStudy.pdb
