@@ -26,3 +26,4 @@ D:\XKZ\CSharp\CSharpWindowStudy\ArrayListStudy\obj\Debug\net7.0\refint\ArrayList
 D:\XKZ\CSharp\CSharpWindowStudy\ArrayListStudy\obj\Debug\net7.0\ArrayListStudy.pdb
 D:\XKZ\CSharp\CSharpWindowStudy\ArrayListStudy\obj\Debug\net7.0\ArrayListStudy.genruntimeconfig.cache
 D:\XKZ\CSharp\CSharpWindowStudy\ArrayListStudy\obj\Debug\net7.0\ref\ArrayListStudy.dll
+D:\XKZ\CSharp\CSharpWindowStudy\ArrayListStudy\obj\Debug\net7.0\ArrayListStudy.sourcelink.json
