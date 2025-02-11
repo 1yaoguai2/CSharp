@@ -31,7 +31,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReChaBaCeShi", "ReChaBaCeSh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializeStudy", "SerializeStudy\SerializeStudy.csproj", "{4D5A332F-EBF6-403F-857C-2C8E2D39E851}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConditionalStudy", "ConditionalStudy\ConditionalStudy.csproj", "{E2DACE37-A174-4170-996A-1F2F0E147414}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConditionalStudy", "ConditionalStudy\ConditionalStudy.csproj", "{E2DACE37-A174-4170-996A-1F2F0E147414}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritedAndComposition", "InheritedAndComposition\InheritedAndComposition.csproj", "{61D6656D-B6B8-452A-B599-E5D13CBD4BE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,6 +97,10 @@ Global
 		{E2DACE37-A174-4170-996A-1F2F0E147414}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2DACE37-A174-4170-996A-1F2F0E147414}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2DACE37-A174-4170-996A-1F2F0E147414}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61D6656D-B6B8-452A-B599-E5D13CBD4BE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61D6656D-B6B8-452A-B599-E5D13CBD4BE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61D6656D-B6B8-452A-B599-E5D13CBD4BE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61D6656D-B6B8-452A-B599-E5D13CBD4BE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
