@@ -65,3 +65,4 @@ out
 *.logs
 *.node_modules
 /trunk/trflk-web/trflk-api/trflk-mobile/logs
+/CSharpWindowStudy/.idea
