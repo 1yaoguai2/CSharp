@@ -18,3 +18,4 @@ D:\XKZ\CSharp\CSharpWindowStudy\AttributeStudy\obj\Debug\AttributeStudy.csproj.G
 D:\XKZ\CSharp\CSharpWindowStudy\AttributeStudy\obj\Debug\AttributeStudy.csproj.CoreCompileInputs.cache
 D:\XKZ\CSharp\CSharpWindowStudy\AttributeStudy\obj\Debug\AttributeStudy.exe
 D:\XKZ\CSharp\CSharpWindowStudy\AttributeStudy\obj\Debug\AttributeStudy.pdb
+D:\XKZ\CSharp\CSharpWindowStudy\AttributeStudy\obj\Debug\AttributeStudy.exe.config

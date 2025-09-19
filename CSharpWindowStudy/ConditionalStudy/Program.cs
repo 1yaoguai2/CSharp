@@ -1,8 +1,8 @@
 ﻿#define FREE_GAME
 #undef DEBUG
 #undef FREE_GAME 
-#define 珍藏版
-//#undef 珍藏版
+//#define 珍藏版
+#undef 珍藏版
 
 // See https://aka.ms/new-console-template for more information
 using ConditionalStudy;
@@ -22,6 +22,8 @@ test.Play();
 //预处理影响范围测试
 TestLimit testLimit = new TestLimit();
 testLimit.TestLimitMonthed();
+
+Console.ReadLine();
 #endif
 
 
