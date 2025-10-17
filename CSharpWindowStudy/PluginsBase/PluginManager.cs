@@ -171,6 +171,7 @@ namespace PluginsBase
             }
             catch (Exception ex)
             {
+                LogExceptionDetails(ex, "UnloadPlugin");
                 return;
             }
 
@@ -206,7 +207,7 @@ namespace PluginsBase
         }
 
         /// <summary>
-        /// 
+        /// 卸载插件
         /// </summary>
         /// <param name="cmd"></param>
         public void ExecuteFunc((Guid, string, string) cmd)

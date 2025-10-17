@@ -140,10 +140,7 @@ namespace MultithreadingStudy
                 Thread.Sleep(3000);
                 MessageBox.Show("荤菜做好了，花费了三秒", "按顺序做菜");
             }));
-            Task.WhenAll(tasks).ContinueWith(t =>
-            {
-                MessageBox.Show("菜全部做好了，可以吃饭了", "提示");
-            });
+            await Task.WhenAll(tasks).ContinueWith(t => MessageBox.Show("菜全部做好了，可以吃饭了", "提示"));
         }
     }
 }
