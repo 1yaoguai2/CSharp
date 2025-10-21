@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritedAndComposition", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManageSystem", "TaskManageSystem\TaskManageSystem.csproj", "{2A4CDC5F-1ED6-451F-86CD-7FD585BA4949}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookManageSystem", "BookManageSystem\BookManageSystem.csproj", "{B449D528-7A08-4F2C-A147-042265859321}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -107,6 +109,10 @@ Global
 		{2A4CDC5F-1ED6-451F-86CD-7FD585BA4949}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A4CDC5F-1ED6-451F-86CD-7FD585BA4949}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A4CDC5F-1ED6-451F-86CD-7FD585BA4949}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B449D528-7A08-4F2C-A147-042265859321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B449D528-7A08-4F2C-A147-042265859321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B449D528-7A08-4F2C-A147-042265859321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B449D528-7A08-4F2C-A147-042265859321}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
