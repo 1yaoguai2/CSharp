@@ -142,5 +142,20 @@ namespace MultithreadingStudy
             }));
             await Task.WhenAll(tasks).ContinueWith(t => MessageBox.Show("菜全部做好了，可以吃饭了", "提示"));
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            ThreadStart.ThreadMethod();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            ThreadStart.ThreadPoolMethod();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            ThreadStart.ParallelMethod();
+        }
     }
 }

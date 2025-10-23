@@ -18,3 +18,4 @@ D:\XKZ\CSharp\CSharpWindowStudy\MultithreadingStudy\obj\Debug\MultithreadingStud
 D:\XKZ\CSharp\CSharpWindowStudy\MultithreadingStudy\obj\Debug\MultithreadingStudy.csproj.CoreCompileInputs.cache
 D:\XKZ\CSharp\CSharpWindowStudy\MultithreadingStudy\obj\Debug\MultithreadingStudy.exe
 D:\XKZ\CSharp\CSharpWindowStudy\MultithreadingStudy\obj\Debug\MultithreadingStudy.pdb
+D:\XKZ\CSharp\CSharpWindowStudy\MultithreadingStudy\obj\Debug\MultithreadingStudy.exe.config
