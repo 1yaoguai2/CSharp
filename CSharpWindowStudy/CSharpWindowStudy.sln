@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookManageSystem", "BookMan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxingAndUnboxing", "BoxingAndUnboxing\BoxingAndUnboxing.csproj", "{6F0F60F6-7E69-4120-ADC3-CF833837EFA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicList", "DynamicList\DynamicList.csproj", "{98C35697-7CF2-4A1B-B291-2CEAE8F943FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -119,6 +121,10 @@ Global
 		{6F0F60F6-7E69-4120-ADC3-CF833837EFA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F0F60F6-7E69-4120-ADC3-CF833837EFA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F0F60F6-7E69-4120-ADC3-CF833837EFA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98C35697-7CF2-4A1B-B291-2CEAE8F943FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98C35697-7CF2-4A1B-B291-2CEAE8F943FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98C35697-7CF2-4A1B-B291-2CEAE8F943FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98C35697-7CF2-4A1B-B291-2CEAE8F943FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
