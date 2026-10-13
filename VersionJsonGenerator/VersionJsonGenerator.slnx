@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Updater/Updater.csproj" Id="cc757c94-dcf9-4c67-bff8-bfb113304cb6" />
+  <Project Path="VersionJsonGenerator/VersionJsonGenerator.csproj" Id="a76024bb-f920-41a7-977c-460c5be8434a" />
+</Solution>
