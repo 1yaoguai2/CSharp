@@ -45,6 +45,7 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.btnStopService = new System.Windows.Forms.Button();
             this.txtPort = new System.Windows.Forms.TextBox();
+            this.btnGeneratePush = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -152,7 +153,7 @@
             // btnGenerate
             // 
             this.btnGenerate.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btnGenerate.Location = new System.Drawing.Point(263, 264);
+            this.btnGenerate.Location = new System.Drawing.Point(263, 270);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(188, 34);
             this.btnGenerate.TabIndex = 11;
@@ -163,7 +164,7 @@
             // txtLog
             // 
             this.txtLog.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtLog.Location = new System.Drawing.Point(143, 338);
+            this.txtLog.Location = new System.Drawing.Point(154, 391);
             this.txtLog.Multiline = true;
             this.txtLog.Name = "txtLog";
             this.txtLog.Size = new System.Drawing.Size(438, 100);
@@ -172,7 +173,7 @@
             // btnStartHttpServer
             // 
             this.btnStartHttpServer.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btnStartHttpServer.Location = new System.Drawing.Point(628, 357);
+            this.btnStartHttpServer.Location = new System.Drawing.Point(639, 391);
             this.btnStartHttpServer.Name = "btnStartHttpServer";
             this.btnStartHttpServer.Size = new System.Drawing.Size(142, 34);
             this.btnStartHttpServer.TabIndex = 13;
@@ -183,7 +184,7 @@
             // progressBar1
             // 
             this.progressBar1.BackColor = System.Drawing.SystemColors.Info;
-            this.progressBar1.Location = new System.Drawing.Point(143, 316);
+            this.progressBar1.Location = new System.Drawing.Point(154, 369);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(438, 16);
             this.progressBar1.TabIndex = 14;
@@ -191,7 +192,7 @@
             // btnStopService
             // 
             this.btnStopService.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.btnStopService.Location = new System.Drawing.Point(628, 404);
+            this.btnStopService.Location = new System.Drawing.Point(639, 438);
             this.btnStopService.Name = "btnStopService";
             this.btnStopService.Size = new System.Drawing.Size(142, 34);
             this.btnStopService.TabIndex = 16;
@@ -207,11 +208,23 @@
             this.txtPort.TabIndex = 17;
             this.txtPort.Text = "8080";
             // 
+            // btnGeneratePush
+            // 
+            this.btnGeneratePush.BackColor = System.Drawing.Color.RosyBrown;
+            this.btnGeneratePush.Location = new System.Drawing.Point(263, 320);
+            this.btnGeneratePush.Name = "btnGeneratePush";
+            this.btnGeneratePush.Size = new System.Drawing.Size(188, 34);
+            this.btnGeneratePush.TabIndex = 18;
+            this.btnGeneratePush.Text = "版本生成上传云储存";
+            this.btnGeneratePush.UseVisualStyleBackColor = false;
+            this.btnGeneratePush.Click += new System.EventHandler(this.btnGeneratePush_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 499);
+            this.Controls.Add(this.btnGeneratePush);
             this.Controls.Add(this.txtPort);
             this.Controls.Add(this.btnStopService);
             this.Controls.Add(this.progressBar1);
@@ -255,6 +268,7 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button btnStopService;
         private System.Windows.Forms.TextBox txtPort;
+        private System.Windows.Forms.Button btnGeneratePush;
     }
 }
 

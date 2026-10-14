@@ -16,6 +16,11 @@ namespace Updater.Common
         public string BackgroundBinFileName { get; set; }
         //不带.exe
         public string GameName { get; set; }
+        
+        // 【新增】下载相关配置
+        public int DownloadTimeoutSeconds { get; set; } = 60;
+        public int MaxRetryCount { get; set; } = 3;
+        public bool EnableLog { get; set; } = true;
     }
 
 }

@@ -36,18 +36,23 @@
             this.labelTitle = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
+            this.txtLog = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelSpeed = new System.Windows.Forms.Label();
+            this.UpdatePanel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
+            this.UpdatePanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblProgress
             // 
             this.lblProgress.AutoSize = true;
             this.lblProgress.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblProgress.Location = new System.Drawing.Point(509, 553);
+            this.lblProgress.Location = new System.Drawing.Point(474, 44);
             this.lblProgress.Name = "lblProgress";
             this.lblProgress.Size = new System.Drawing.Size(39, 16);
             this.lblProgress.TabIndex = 0;
-            this.lblProgress.Text = "100%";
+            this.lblProgress.Text = "  0%";
             // 
             // btnSetting
             // 
@@ -64,7 +69,7 @@
             // 
             this.btnStart.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnStart.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnStart.Location = new System.Drawing.Point(737, 533);
+            this.btnStart.Location = new System.Drawing.Point(734, 499);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(85, 46);
             this.btnStart.TabIndex = 2;
@@ -76,7 +81,7 @@
             // 
             this.btnClose.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.btnClose.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnClose.Location = new System.Drawing.Point(861, 533);
+            this.btnClose.Location = new System.Drawing.Point(858, 499);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(85, 46);
             this.btnClose.TabIndex = 3;
@@ -88,7 +93,7 @@
             // 
             this.btnUpdate.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnUpdate.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnUpdate.Location = new System.Drawing.Point(609, 533);
+            this.btnUpdate.Location = new System.Drawing.Point(574, 29);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(85, 46);
             this.btnUpdate.TabIndex = 4;
@@ -108,7 +113,7 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(41, 553);
+            this.progressBar1.Location = new System.Drawing.Point(6, 44);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(462, 16);
             this.progressBar1.TabIndex = 6;
@@ -123,24 +128,66 @@
             this.pictureBoxIcon.TabIndex = 7;
             this.pictureBoxIcon.TabStop = false;
             // 
+            // txtLog
+            // 
+            this.txtLog.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtLog.Location = new System.Drawing.Point(6, 66);
+            this.txtLog.Multiline = true;
+            this.txtLog.Name = "txtLog";
+            this.txtLog.Size = new System.Drawing.Size(462, 74);
+            this.txtLog.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(3, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(87, 16);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "下载速度：";
+            // 
+            // labelSpeed
+            // 
+            this.labelSpeed.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelSpeed.Location = new System.Drawing.Point(96, 25);
+            this.labelSpeed.Name = "labelSpeed";
+            this.labelSpeed.Size = new System.Drawing.Size(100, 16);
+            this.labelSpeed.TabIndex = 10;
+            this.labelSpeed.Text = "0";
+            // 
+            // UpdatePanel
+            // 
+            this.UpdatePanel.BackColor = System.Drawing.Color.CadetBlue;
+            this.UpdatePanel.Controls.Add(this.lblProgress);
+            this.UpdatePanel.Controls.Add(this.btnUpdate);
+            this.UpdatePanel.Controls.Add(this.progressBar1);
+            this.UpdatePanel.Controls.Add(this.labelSpeed);
+            this.UpdatePanel.Controls.Add(this.txtLog);
+            this.UpdatePanel.Controls.Add(this.label1);
+            this.UpdatePanel.Location = new System.Drawing.Point(36, 470);
+            this.UpdatePanel.Name = "UpdatePanel";
+            this.UpdatePanel.Size = new System.Drawing.Size(675, 154);
+            this.UpdatePanel.TabIndex = 13;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1002, 627);
+            this.Controls.Add(this.UpdatePanel);
             this.Controls.Add(this.pictureBoxIcon);
-            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.labelTitle);
-            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.btnSetting);
-            this.Controls.Add(this.lblProgress);
             this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "数字孪生启动";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();
+            this.UpdatePanel.ResumeLayout(false);
+            this.UpdatePanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,6 +203,10 @@
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.PictureBox pictureBoxIcon;
+        private System.Windows.Forms.TextBox txtLog;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelSpeed;
+        private System.Windows.Forms.Panel UpdatePanel;
     }
 }
 
