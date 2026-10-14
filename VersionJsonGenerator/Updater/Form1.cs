@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Net.Http;
-using System.Net.NetworkInformation;
+using System.Threading;
 using System.Windows.Forms;
 using Updater.Common;
 
@@ -162,6 +162,7 @@ namespace Updater
             }
             btnUpdate.Enabled = false;
             btnStart.Enabled = false;
+            btnClose.Enabled = false;
             lblProgress.Text = "0%";
             progressBar1.Value = 0;
 
@@ -180,6 +181,9 @@ namespace Updater
                     if (File.Exists(localFilePath))
                     {
                         string localMd5 = GetFileMD5(localFilePath);
+                        GC.Collect(); //强制回收，释放文件锁
+                        GC.WaitForPendingFinalizers();
+                        Thread.Sleep(50); //微小延时，确保文件锁释放
                         if (localMd5 == fileItem.md5)
                         {
                             Log($"跳过：{fileItem.path} MD5一致");
@@ -197,6 +201,7 @@ namespace Updater
                     MessageBox.Show(this, "已是最新版本！");
                     SetUpdateUIVisible(false);
                     btnUpdate.Enabled = true;
+                    btnStart.Enabled = true;
                     CheckGameIsRunning();
                     return;
                 }
@@ -263,6 +268,7 @@ namespace Updater
             finally
             {
                 btnUpdate.Enabled = true;
+                btnStart.Enabled = true;
                 //CheckGameIsRunning();
             }
         }
