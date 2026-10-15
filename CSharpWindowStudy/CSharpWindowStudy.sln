@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.10.35013.160
+# Visual Studio Version 18
+VisualStudioVersion = 18.10.12217.157 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionStudy", "ReflectionStudy\ReflectionStudy.csproj", "{8121733B-C10A-46E8-BB21-233A45F0FADD}"
 EndProject
@@ -44,6 +44,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicList", "DynamicList\DynamicList.csproj", "{98C35697-7CF2-4A1B-B291-2CEAE8F943FD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceStuday", "InterfaceStuday\InterfaceStuday.csproj", "{A2CD2757-A2CE-49FC-ACD0-751F52502600}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeConversion", "TypeConversion\TypeConversion.csproj", "{DF1B0A34-9CBC-496C-9193-5AA5F7728FF1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -131,6 +133,10 @@ Global
 		{A2CD2757-A2CE-49FC-ACD0-751F52502600}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2CD2757-A2CE-49FC-ACD0-751F52502600}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2CD2757-A2CE-49FC-ACD0-751F52502600}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF1B0A34-9CBC-496C-9193-5AA5F7728FF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF1B0A34-9CBC-496C-9193-5AA5F7728FF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF1B0A34-9CBC-496C-9193-5AA5F7728FF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF1B0A34-9CBC-496C-9193-5AA5F7728FF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

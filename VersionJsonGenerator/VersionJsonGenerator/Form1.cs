@@ -5,6 +5,7 @@ using System.IO;
 using System.Net;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VersionJsonGenerator.Common;
 
 namespace VersionJsonGenerator
 {
@@ -24,16 +25,14 @@ namespace VersionJsonGenerator
         private List<string> _allScanFiles = new List<string>();
         private AppConfig _config;
 
-        // 【新增】日志文件路径
-        private readonly string _logFilePath = Path.Combine(Application.StartupPath, "log.txt");
-        private const long MaxLogFileSize = 100 * 1024 * 1024; // 100MB
-        private readonly object _logLock = new object(); // 日志写入锁
-
         public Form1()
         {
             InitializeComponent();
-            // 【新增】初始化日志文件
-            InitLogFile();
+
+            // 【提取】初始化全局日志，并订阅界面显示
+            Logger.Instance.Initialize();
+            Logger.Instance.OnLog += AppendLog;
+
             LoadConfig();
             txtPort.Text = "8080"; //默认端口
             this.FormClosing += new FormClosingEventHandler(Form1_FormClosing);
@@ -101,6 +100,8 @@ namespace VersionJsonGenerator
         /// <param name="e"></param>
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
+            // 取消订阅，避免窗体释放后事件仍被触发
+            Logger.Instance.OnLog -= AppendLog;
             SaveConfig();
         }
         #endregion
@@ -422,120 +423,32 @@ namespace VersionJsonGenerator
 
 
         /// <summary>
-        /// 【新增】初始化日志文件
+        /// 日志输出（转发到全局 Logger，同时由 Logger 通知界面显示）
+        /// 其他窗口/类可直接使用 Logger.Instance.Log(...)
         /// </summary>
-        private void InitLogFile()
-        {
-            try
-            {
-                // 检查日志文件大小
-                if (File.Exists(_logFilePath))
-                {
-                    var fileInfo = new FileInfo(_logFilePath);
-                    if (fileInfo.Length > MaxLogFileSize)
-                    {
-                        CleanLogFile();
-                    }
-                }
-                else
-                {
-                    // 创建日志文件
-                    File.WriteAllText(_logFilePath, $"========== 应用启动 {DateTime.Now:yyyy-MM-dd HH:mm:ss} ==========\r\n");
-                }
-            }
-            catch (Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine($"初始化日志文件失败：{ex.Message}");
-            }
-        }
-
-        /// <summary>
-        /// 【新增】清理日志文件（删除前99%的内容，保留最后1%）
-        /// </summary>
-        private void CleanLogFile()
-        {
-            try
-            {
-                lock (_logLock)
-                {
-                    // 读取所有日志
-                    var allLines = File.ReadAllLines(_logFilePath);
-                    int totalLines = allLines.Length;
-
-                    // 保留最后 1% 的内容
-                    int keepLines = Math.Max(totalLines / 100, 100); // 至少保留100行
-                    var linesToKeep = new string[Math.Min(keepLines, totalLines)];
-
-                    for (int i = 0; i < linesToKeep.Length; i++)
-                    {
-                        linesToKeep[i] = allLines[totalLines - linesToKeep.Length + i];
-                    }
-
-                    // 写回文件
-                    File.WriteAllLines(_logFilePath, linesToKeep);
-
-                    // 添加清理标记
-                    File.AppendAllText(_logFilePath, $"\r\n========== 日志清理 {DateTime.Now:yyyy-MM-dd HH:mm:ss} 已删除前99%的旧日志 ==========\r\n");
-                }
-            }
-            catch (Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine($"清理日志文件失败：{ex.Message}");
-            }
-        }
-
-
-        //日志输出函数（同时写入文件）
         private void Log(string msg, bool writeToFile = true)
         {
-            string logLine = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss} {msg}";
-
-            // 【优化】启用日志显示
-            if (txtLog != null)
-            {
-                if (txtLog.InvokeRequired)
-                {
-                    txtLog.Invoke(new Action(() => Log(msg, writeToFile)));
-                    return;
-                }
-                txtLog.AppendText($"{DateTime.Now:HH:mm:ss} {msg}\r\n");
-                txtLog.ScrollToCaret();
-            }
-
-            // 【新增】写入日志文件
-            if (writeToFile)
-            {
-                WriteLogToFile(logLine);
-            }
+            Logger.Instance.Log(msg, writeToFile);
         }
 
         /// <summary>
-        /// 【新增】写入日志到文件
+        /// 将日志追加到界面文本框（订阅 Logger.OnLog 事件）
         /// </summary>
-        private void WriteLogToFile(string logLine)
+        public void AppendLog(string msg)
         {
-            try
-            {
-                lock (_logLock)
-                {
-                    File.AppendAllText(_logFilePath, logLine + "\r\n");
+            if (txtLog == null) return;
 
-                    // 每次写入后检查文件大小
-                    var fileInfo = new FileInfo(_logFilePath);
-                    if (fileInfo.Length > MaxLogFileSize)
-                    {
-                        CleanLogFile();
-                    }
-                }
-            }
-            catch (Exception ex)
+            if (txtLog.InvokeRequired)
             {
-                System.Diagnostics.Debug.WriteLine($"写入日志文件失败：{ex.Message}");
+                txtLog.Invoke(new Action<string>(AppendLog), msg);
+                return;
             }
+            txtLog.AppendText($"{DateTime.Now:HH:mm:ss} {msg}\r\n");
+            txtLog.ScrollToCaret();
         }
 
         /// <summary>
-        /// 【新增】显示消息框并记录到日志
+        /// 显示消息框并记录到日志
         /// </summary>
         private void ShowMessage(string message, string title = "提示", MessageBoxButtons buttons = MessageBoxButtons.OK, MessageBoxIcon icon = MessageBoxIcon.Information)
         {
@@ -546,20 +459,70 @@ namespace VersionJsonGenerator
             MessageBox.Show(this, message, title, buttons, icon);
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
 
+        private async void btnGeneratePush_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtRootPath.Text) || !Directory.Exists(txtRootPath.Text))
+            {
+                ShowMessage("请先选择正确的“软件发布目录”！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // 开始上传：禁用按钮、重置进度与速度
+            //btnGeneratePush.Enabled = false;
+            progressBar1.Value = 0;
+            labelSpeed.Text = "上传速度：--";
+
+            var push = new QiniuUploaderPush(txtNewVersion.Text, txtRootPath.Text);
+            push.OnProgress += Push_OnProgress;
+
+            try
+            {
+                await push.PushAsync();
+                ShowMessage("版本生成并上传完成！", "完成", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                ShowMessage($"上传失败：{ex.Message}", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                push.OnProgress -= Push_OnProgress;
+                labelSpeed.Text = "上传速度：--";
+                progressBar1.Value = 0;
+                //btnGeneratePush.Enabled = true;
+            }
         }
 
-        private void progressBar1_Click(object sender, EventArgs e)
+        /// <summary>
+        /// 上传进度回调（由后台线程触发），更新进度条与上传速度
+        /// </summary>
+        private void Push_OnProgress(UploadProgressInfo info)
         {
+            // 跨线程访问UI，切换回UI线程
+            if (progressBar1.InvokeRequired)
+            {
+                progressBar1.BeginInvoke(new Action<UploadProgressInfo>(Push_OnProgress), info);
+                return;
+            }
 
-        }
+            if (info.Percent < 0)
+            {
+                labelSpeed.Text = "上传速度：失败";
+                return;
+            }
 
-        private void btnGeneratePush_Click(object sender, EventArgs e)
-        {
-            QiniuUploaderPush qiniuUploaderPush = new QiniuUploaderPush(txtNewVersion.Text, txtRootPath.Text);
-            qiniuUploaderPush.Push();
+            progressBar1.Value = Math.Max(progressBar1.Minimum, Math.Min(progressBar1.Maximum, info.Percent));
+
+            if (info.BytesPerSecond > 0)
+            {
+                labelSpeed.Text = $"上传速度：{QiniuUploaderPush.FormatSpeed(info.BytesPerSecond)}";
+            }
+
+            if (info.Percent >= 100)
+            {
+                progressBar1.Value = progressBar1.Maximum;
+            }
         }
     }
 

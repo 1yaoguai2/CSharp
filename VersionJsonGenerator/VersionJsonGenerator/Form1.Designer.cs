@@ -45,7 +45,7 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.btnStopService = new System.Windows.Forms.Button();
             this.txtPort = new System.Windows.Forms.TextBox();
-            this.btnGeneratePush = new System.Windows.Forms.Button();
+            this.labelSpeed = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -173,7 +173,7 @@
             // btnStartHttpServer
             // 
             this.btnStartHttpServer.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btnStartHttpServer.Location = new System.Drawing.Point(639, 391);
+            this.btnStartHttpServer.Location = new System.Drawing.Point(629, 405);
             this.btnStartHttpServer.Name = "btnStartHttpServer";
             this.btnStartHttpServer.Size = new System.Drawing.Size(142, 34);
             this.btnStartHttpServer.TabIndex = 13;
@@ -192,7 +192,7 @@
             // btnStopService
             // 
             this.btnStopService.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.btnStopService.Location = new System.Drawing.Point(639, 438);
+            this.btnStopService.Location = new System.Drawing.Point(629, 452);
             this.btnStopService.Name = "btnStopService";
             this.btnStopService.Size = new System.Drawing.Size(142, 34);
             this.btnStopService.TabIndex = 16;
@@ -208,23 +208,21 @@
             this.txtPort.TabIndex = 17;
             this.txtPort.Text = "8080";
             // 
-            // btnGeneratePush
+            // labelSpeed
             // 
-            this.btnGeneratePush.BackColor = System.Drawing.Color.RosyBrown;
-            this.btnGeneratePush.Location = new System.Drawing.Point(263, 320);
-            this.btnGeneratePush.Name = "btnGeneratePush";
-            this.btnGeneratePush.Size = new System.Drawing.Size(188, 34);
-            this.btnGeneratePush.TabIndex = 18;
-            this.btnGeneratePush.Text = "版本生成上传云储存";
-            this.btnGeneratePush.UseVisualStyleBackColor = false;
-            this.btnGeneratePush.Click += new System.EventHandler(this.btnGeneratePush_Click);
+            this.labelSpeed.AutoSize = true;
+            this.labelSpeed.Location = new System.Drawing.Point(598, 372);
+            this.labelSpeed.Name = "labelSpeed";
+            this.labelSpeed.Size = new System.Drawing.Size(77, 12);
+            this.labelSpeed.TabIndex = 19;
+            this.labelSpeed.Text = "上传速度：--";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 499);
-            this.Controls.Add(this.btnGeneratePush);
+            this.Controls.Add(this.labelSpeed);
             this.Controls.Add(this.txtPort);
             this.Controls.Add(this.btnStopService);
             this.Controls.Add(this.progressBar1);
@@ -268,7 +266,7 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button btnStopService;
         private System.Windows.Forms.TextBox txtPort;
-        private System.Windows.Forms.Button btnGeneratePush;
+        private System.Windows.Forms.Label labelSpeed;
     }
 }
 
